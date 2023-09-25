@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="random jokes">
+    <meta name="keywords" content="random jokes, Iuliia Pidlisna">
+    <meta name="author" content="Iuliia Pidlisna">
+
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>random jokes</title>
 </head>
-<body>
-    
+
+<body class="page">
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__content">
+                <img class="title-img" src="./assets/images/smile.png" alt="image">
+                <p class="title-text">Jokes</p>
+                <div class="settings__lang">
+                    <!-- <input type="radio" checked id="lang-en" name="lang" value="en">
+                    <label for="lang-en" class="label__title"> en </label>
+                    <input type="radio" id="lang-ua" name="lang" value="ua">
+                    <label for="lang-ua" class="label__title"> ua </label> -->
+                    <p class="lang lang-en">en</p>
+                    <p class="lang lang-be">be</p>
+                    <p class="lang lang-ru">ru</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <div class="main__content">
+                <div class="quote-author">
+                    <div class="quote"></div>
+                    <div class="author"></div>
+                </div>
+                <button class="change-quote"></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+
+                <div class="my-github">
+                    <a class="link my-github__link" href="https://github.com/IuliiaPi" target="_blank">
+                        <img class="my-github__img" src="./assets/svg/github.png" alt="github IuliiaPi" width="20"
+                            height="20"></a>
+                </div>
+
+                <div class="copyright">&copy; 2023 </div>
+
+                <div class="rs-school">
+                    <a class="link rs-school__link" href="https://rs.school/js/" target="_blank">
+                        <img class="rs-school__img" src="https://rs.school/images/rs_school_js.svg" alt="rs-school"
+                            width="50" height="20"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 </body>
+
+<script type="module" src="index.js"></script>
+
 </html>
