@@ -31,6 +31,17 @@ langRu.addEventListener('click', (e) => {
     main.classList.remove('_bg-be');
 });
 
+const audio = new Audio();
+let isPlay = false;
+
+function playAudio() {
+    audio.src = "./assets/audio/flute.wav";
+    audio.currentTime = 0;
+    audio.volume = 0.2;
+    audio.play();
+    isPlay = true;
+}
+
 const btnChangeQuote = document.querySelector('.change-quote');
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
@@ -50,6 +61,7 @@ async function getQuotes() {
 getQuotes();
 
 btnChangeQuote.addEventListener("click", getQuotes);
+btnChangeQuote.addEventListener("click", playAudio);
 
 // const colors = ['lightblue', 'lightskyblue', 'grey', 'lightgrey', 'white', 'lightpink', 'lightgreen', '#aaa', '#FFAACC', 'rgb(245, 176, 176)', 'rgb(255, 255, 255)'];
 // btnChangeQuote.addEventListener("click", (e) => {
@@ -92,6 +104,8 @@ langRu.addEventListener("click", (e) => {
     quotes = 'quotes_ru.json';
     getQuotes();
 });
+
+
 
 // let lang = en;
 
